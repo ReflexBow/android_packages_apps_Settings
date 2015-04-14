@@ -91,6 +91,12 @@
             android:dependency="enable_nav_bar"
             settings:advanced="true"/>
 
+       <ListPreference
+            android:key="keys_overflow_button"
+            android:title="@string/keys_overflow_title"
+            android:entries="@array/overflow_button_entries"
+            android:entryValues="@array/overflow_button_values" />
+            
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -102,13 +108,6 @@
             android:title="@string/hw_keys_title"
             android:summary="@string/hw_keys_summary"
             android:defaultValue="true"/>
-
-       <ListPreference
-            android:key="keys_overflow_button"
-            android:title="@string/keys_overflow_title"
-            android:entries="@array/overflow_button_entries"
-            android:entryValues="@array/overflow_button_values"
-            android:dependency="enable_hw_keys" />
 
     </PreferenceCategory>
 
